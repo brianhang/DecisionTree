@@ -63,7 +63,7 @@ const DecisionExamples &examples) {
 
         // Insert a subset of this data that does not include the selected
         // attribute.
-        DecisionData subSet((*it).size() - 1);
+        DecisionData subSet;
 
         for (unsigned int i = 0; i < (*it).size(); i++) {
             if (i == attribute) {
